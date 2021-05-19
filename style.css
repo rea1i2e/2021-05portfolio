@@ -1,0 +1,73 @@
+body {
+  padding-top :100px;
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: white;
+}
+
+.header-inner {
+  max-width: 1200px;
+  display: flex;
+  /* background: silver; */
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+
+}
+
+.header-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-nav li:not(:last-child) {
+  margin-right :40px;
+}
+.header-nav a {
+  font-size:20px;
+}
+
+a {
+  text-decoration: none;
+  transition: all ease .5s;
+  opacity: 1;
+  color: black;
+ }
+
+a:hover {
+  opacity: .7;
+  color: green;
+}
+
+.TopImg {
+  margin-bottom: 150px;
+}
+
+section {
+  margin-bottom: 250px;
+}
+
+#portfolio {
+  margin-top: -150px;
+  padding-top: 150px;
+}
+#about {
+  margin-top: -150px;
+  padding-top: 150px;
+}
+#sns {
+  margin-top: -150px;
+  padding-top: 150px;
+}
+
+.contents-container {
+  display: flex;
+}
+
+.contents-container p {
+  margin-left: 12px;
+}
