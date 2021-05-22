@@ -48,6 +48,12 @@ section {
   margin-bottom: 250px;
 }
 
+h2 {
+  font-size: 24px;
+  padding-left: 12px;
+  border-left: 10px solid green;
+}
+
 #portfolio {
   margin-top: -150px;
   padding-top: 150px;
