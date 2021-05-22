@@ -52,6 +52,10 @@ section {
   margin-top: -150px;
   padding-top: 150px;
 }
+#skill {
+  margin-top: -150px;
+  padding-top: 150px;
+}
 #about {
   margin-top: -150px;
   padding-top: 150px;
@@ -84,7 +88,7 @@ section {
   margin: 32px;
 }
 
-.historyImg {
+.p100pxImg {
   width: 100px;
   margin: 16px;
 }

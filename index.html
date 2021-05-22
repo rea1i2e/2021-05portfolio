@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="よしあきのポートフォリオサイトです。">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="img/favicon.ico">
   <title>よしあきのポートフォリオサイト</title>
@@ -22,6 +23,9 @@
             <a href="#portfolio">作品紹介</a>
           </li>
           <li>
+            <a href="#skill">できること</a>
+          </li>
+          <li>
             <a href="#about">自己紹介</a>
           </li>
           <li>
@@ -37,7 +41,7 @@
   <img class="TopImg" src="img/TopImg.jpeg" alt="Top Image">
 
   <main>
-    <section class="portfolio-section">
+    <section>
       <h2 id="portfolio">作品紹介</h2>
       <h3>
         <a target="_blank" href="https://rea1i2e.github.io/karate">よしあきの空手道場</a>
@@ -48,13 +52,39 @@
         </a>
         <div>
           <h4>2021.04.14　公開</h4>
-          <p>
-            架空の空手道場を紹介するWEBサイトです。<br>はじめて作ったWEBサイトで、<strong>divタグ</strong>や<strong>hover疑似クラス</strong>の練習をしました
-          </p>
+          <div class="contents-container">
+            <img class="p100pxImg" src="img/karateImg.png" alt="picture of history">
+            <p>
+              架空の空手道場を紹介するWEBサイトです。<br>はじめて作ったWEBサイトで、<strong>divタグ</strong>や<strong>hover疑似クラス</strong>の練習をしました
+            </p>
+          </div>
           <h4>2021.05.06　更新</h4>
-          <p><strong>アニメーション</strong>を使ったページ「技で遊ぼう」を追加しました。</p>
+          <div class="contents-container">
+            <img class="p100pxImg" src="img/wazalogo.png" alt="picture of history">
+            <p><strong>アニメーション</strong>を使ったページ「技で遊ぼう」を追加しました。</p>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section>
+      <h2 id="skill">できること</h2>
+        <h3>コーディング</h3>
+        <div class="contents-container">
+          <img class="p100pxImg" src="img/coding.jpeg" alt="picture of coding">
+        <p><strong>HTML・CSS</strong>を使って、デザインカンプからの<strong>コーディング</strong>を承ります。</p>
+      </div>
+        <h3>バージョン管理</h3>
+        <div class="contents-container">
+          <img class="p100pxImg" src="img/git.jpeg" alt="picture of git">
+        <p><strong>git</strong>を使って、<strong>バージョン管理</strong>しながらのコーディング対応が可能です。</p>
+      </div>
+        <h3>画像編集</h3>
+        <div class="contents-container">
+          <img class="p100pxImg" src="img/gimp.jpeg" alt="picture of gimp">
+        <p><strong>Gimp</strong>を使って、サイズの変更・文字の追加など<strong>簡単な画像編集</strong>の対応ができます。</p>
+      </div>
+    
     </section>
 
     <section>
@@ -142,38 +172,38 @@
       <h2 id="learning-history">学習履歴</h2>
       <h3>2021.01.04　プログラミングに興味を持つ</h3>
       <div class="contents-container">
-        <img class="historyImg" src="img/history01.jpeg" alt="picture of history">
-        <p><a target="_blank" href="https://crowdworks.jp/">クラウドワークス</a>で、プログラミング講座に関するアンケートに答え、興味をもつきっかけに</p>
+        <img class="p100pxImg" src="img/history01.jpeg" alt="picture of history">
+        <p><a target="_blank" href="https://crowdworks.jp/">クラウドワークス</a>で、<strong>プログラミング講座</strong>に関するアンケートに答え、興味をもつきっかけに</p>
       </div>
       <h3>2021.03.24　1日2時間の学習時間を確保することを決め、学習開始</h3>
       <div class="contents-container">
-        <img class="historyImg" src="img/history02.jpeg" alt="picture of history">
-        <p>クラウドワークスのライティング案件を1件やってみたが、あまり稼げないことがわかり、プログラミングに時間をかけることを決める<br><a target="_blank" href="https://dotinstall.com/">ドットインストール</a>で無料の動画学習をためす</p>
+        <img class="p100pxImg" src="img/history02.jpeg" alt="picture of history">
+        <p>クラウドワークスのライティング案件を1件やってみたが、あまり稼げないことがわかり、プログラミングに時間をかけることを決める<br><a target="_blank" href="https://dotinstall.com/">ドットインストール</a>で無料の<strong>動画学習</strong>をためす</p>
       </div>
         <h3>2021.03.27　<a target="_blank" href="https://dotinstall.com/">ドットインストール</a>で学ぶことを決め、課金</h3>
         <div class="contents-container">
-          <img class="historyImg" src="img/history03.jpeg" alt="picture of history">
+          <img class="p100pxImg" src="img/history03.jpeg" alt="picture of history">
           <p>HTML、CSSや<a target="_blank" href="https://github.com/">GitHubPages</a>などを動画で学習</p>
         </div>
         <h3>2021.04.14　サンプルWEBサイト<a target="_blank" href="https://rea1i2e.github.io/karate/">「よしあきの空手道場」</a>の制作と公開</h3>
         <div class="contents-container">
-          <img class="historyImg" src="img/history04.jpeg" alt="picture of history">
-          <p>基礎学習だけではつまらなく、頭に入りにくいと考えサンプルWEBサイトを制作することにした<br>息子が空手をはじめたときに、WEBページがなくて不便だと感じ、そのWEBページの制作を受注するイメージでつくった</p>
+          <img class="p100pxImg" src="img/history04.jpeg" alt="picture of history">
+          <p>基礎学習だけではつまらなく、頭に入りにくいと考え<strong>サンプルWEBサイト</strong>を制作することにした<br>息子が空手をはじめたときに、WEBページがなくて不便だと感じ、そのWEBページの制作を受注するイメージでつくった</p>
         </div>
         <h3>2021.04.21　<a target="_blank" href="https://dotinstall.com/">ドットインストール</a>で<a target="_blank" href="https://git-scm.com/">git</a>の学習開始</h3>
           <div class="contents-container">
-            <img class="historyImg" src="img/history05.jpeg" alt="picture of history">
-            <p><a target="_blank" href="https://crowdworks.jp/">クラウドワークス</a>で案件を見ながらキーワードを学習。そこで<a target="_blank" href="https://git-scm.com/">git</a>に興味を持つ<br>UNIXコマンドやVimについても必要を感じて<a target="_blank" href="https://dotinstall.com/">ドットインストール</a>で学習</p>
+            <img class="p100pxImg" src="img/history05.jpeg" alt="picture of history">
+            <p><a target="_blank" href="https://crowdworks.jp/">クラウドワークス</a>で案件を見ながらキーワードを学習。そこで<a target="_blank" href="https://git-scm.com/">git</a>に興味を持つ<br><strong>UNIXコマンド</strong>や<strong>Vim</strong>についても必要を感じて<a target="_blank" href="https://dotinstall.com/">ドットインストール</a>で学習</p>
         </div>
         <h3>2021.05.06　<a target="_blank" href="https://rea1i2e.github.io/karate/">「よしあきの空手道場」</a>にアニメーションを使ったページを追加</h3>
         <div class="contents-container">
-          <img class="historyImg" src="img/history06.jpeg" alt="picture of history">
-          <p>アニメーションに興味をもてず、息子たちを楽しませるというモチベーションでアニメーションを使ったページをつくろうと考えた<br>gitを利用して、更新</p>
+          <img class="p100pxImg" src="img/history06.jpeg" alt="picture of history">
+          <p><strong>アニメーション</strong>に興味をもてず、息子たちを楽しませるというモチベーションで<strong>アニメーション</strong>を使ったページをつくろうと考えた<br><strong>git</strong>を利用して、更新</p>
         </div>
         <h3>2021.05.12　<a target="_blank" href="https://www.figma.com/">Figma</a>からのコーディングにチャレンジ</h3>
         <div class="contents-container">
-          <img class="historyImg" src="img/history07.jpeg" alt="picture of history">
-        <p>基礎学習をしていても、<a target="_blank" href="https://crowdworks.jp/">クラウドワークス</a>で案件を受注するイメージがわかなかった。<br>YouTubeで<a target="_blank" href="https://www.youtube.com/watch?v=Z-SHZTvnUng">初心者向きのFigmaのデザインカンプからのコーディング動画</a>をみつけ、教材にした</p>
+          <img class="p100pxImg" src="img/history07.jpeg" alt="picture of history">
+        <p>基礎学習をしていても、<a target="_blank" href="https://crowdworks.jp/">クラウドワークス</a>で案件を受注する<strong>イメージ</strong>がわかなかった。<br>YouTubeで<a target="_blank" href="https://www.youtube.com/watch?v=Z-SHZTvnUng">初心者向きのFigmaのデザインカンプからのコーディング動画</a>をみつけ、教材にした</p>
       </div> 
     </section>
     <section>
@@ -181,20 +211,32 @@
         <h3>
           <a target="_blank" href="https://twitter.com/rea1i2e">Twitter</a>
         </h3>
-        <p>ウーバーイーツやプログラミング学習、オーラリングについて毎日発信しています。</p>
-        <h3>
+        <div class="contents-container">
+          <img class="p100pxImg" src="img/twitter.jpeg" alt="picture of twitter">
+        <p><strong>ウーバーイーツ</strong>や<strong>プログラミング学習</strong>、<strong>オーラリング</strong>について<strong>毎日発信</strong>しています。</p>
+      </div>
+      <h3>
           <a target="_blank" href="https://www.instagram.com/rea1i2e/?hl=ja">Instagram</a>
         </h3>
-        <p>毎週1つ、新しい体験を1枚の写真に記録しています。</p>
+        <div class="contents-container">
+          <img class="p100pxImg" src="img/insta.jpeg" alt="picture of insta">
+        <p>毎週1つ、<strong>新しい体験</strong>を1枚の写真に記録しています。</p>
+       </div>
         <h3>
           <a target="_blank" href="https://note.com/update1123">note</a>
         </h3>
-        <p>暮らしや健康、学習のことを毎日1つ発信しています。</p>
-        <h3>
+        <div class="contents-container">
+          <img class="p100pxImg" src="img/note.jpeg" alt="picture of note">
+        <p><strong>暮らし</strong>や<strong>健康</strong>、<strong>学習</strong>のことを<strong>毎日1つ発信</strong>しています。</p>
+      </div>
+      <h3>
           <a target="_blank" href="https://booklog.jp/users/rea1i2e">ブクログ</a>
         </h3>
-      </section>
-        <p>月に1〜2冊本を読み、感想を投稿しています。</p>
+        <div class="contents-container">
+          <img class="p100pxImg" src="img/booklog.jpeg" alt="picture of booklog">
+        <p><strong>月に1〜2冊</strong>本を読み、感想を投稿しています。</p>
+      </div>
+    </section>
     
   </main>
   <footer>
