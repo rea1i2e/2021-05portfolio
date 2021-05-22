@@ -16,7 +16,7 @@ header {
   justify-content: space-between;
   align-items: center;
   /* position: fixed; */
-
+  
 }
 
 .header-nav ul {
@@ -67,8 +67,24 @@ section {
 
 .contents-container {
   display: flex;
+  align-items: center;
 }
+
 
 .contents-container p {
   margin-left: 12px;
+}
+
+.desc {
+  flex: 1;
+}
+
+.contentsImg {
+  width: 300px;
+  margin: 32px;
+}
+
+.historyImg {
+  width: 100px;
+  margin: 16px;
 }
