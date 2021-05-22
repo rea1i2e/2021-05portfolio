@@ -29,16 +29,13 @@ header {
 }
 .header-nav a {
   font-size:20px;
-}
-
-a {
   text-decoration: none;
   transition: all ease .5s;
   opacity: 1;
   color: black;
- }
+}
 
-a:hover {
+.header-nav a:hover {
   opacity: .7;
   color: green;
 }
@@ -56,6 +53,10 @@ section {
   padding-top: 150px;
 }
 #about {
+  margin-top: -150px;
+  padding-top: 150px;
+}
+#learning-history {
   margin-top: -150px;
   padding-top: 150px;
 }
