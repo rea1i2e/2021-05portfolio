@@ -68,6 +68,10 @@ section {
   margin-top: -150px;
   padding-top: 150px;
 }
+#extra {
+  margin-top: -150px;
+  padding-top: 150px;
+}
 
 .contents-container {
   display: flex;
