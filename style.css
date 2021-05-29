@@ -27,6 +27,7 @@ header {
 .header-nav li:not(:last-child) {
   margin-right :40px;
 }
+
 .header-nav a {
   font-size:20px;
   text-decoration: none;
@@ -45,39 +46,20 @@ header {
 }
 
 section {
+  /* 要素がヘッダーの後ろに隠れないように */
   margin-bottom: 250px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 32px;
   padding-left: 12px;
   border-left: 10px solid green;
 }
 
-#portfolio {
-  margin-top: -150px;
+section {
   padding-top: 150px;
 }
-#skill {
-  margin-top: -150px;
-  padding-top: 150px;
-}
-#about {
-  margin-top: -150px;
-  padding-top: 150px;
-}
-#learning-history {
-  margin-top: -150px;
-  padding-top: 150px;
-}
-#sns {
-  margin-top: -150px;
-  padding-top: 150px;
-}
-#extra {
-  margin-top: -150px;
-  padding-top: 150px;
-}
+
 
 .contents-container {
   display: flex;
