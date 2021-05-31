@@ -1,6 +1,9 @@
+/* 共通のCSS */
+
 body {
   padding-top :100px;
 }
+
 header {
   width: 100%;
   position: fixed;
@@ -9,27 +12,25 @@ header {
   background: white;
 }
 
-.header-inner {
-  max-width: 1200px;
-  display: flex;
-  /* background: silver; */
-  justify-content: space-between;
-  align-items: center;
-  /* position: fixed; */
-  
+h1 {
+  margin: 0;
+}
+
+/* スマホ版では表示しない。 */
+.logo {
+  display: none;
+}
+
+/* スマホ版で表示する */
+.logoforSP {
+  display: initial;
 }
 
 .header-nav ul {
-  display: flex;
   list-style: none;
 }
 
-.header-nav li:not(:last-child) {
-  margin-right :40px;
-}
-
 .header-nav a {
-  font-size:20px;
   text-decoration: none;
   transition: all ease .5s;
   opacity: 1;
@@ -39,16 +40,7 @@ header {
 .header-nav a:hover {
   opacity: .7;
   color: green;
-}
-
-.TopImg {
-  margin-bottom: 150px;
-}
-
-section {
-  /* 要素がヘッダーの後ろに隠れないように */
-  margin-bottom: 250px;
-}
+}  
 
 h2 {
   font-size: 32px;
@@ -57,13 +49,8 @@ h2 {
 }
 
 section {
+  /* 要素がヘッダーの後ろに隠れないように */
   padding-top: 150px;
-}
-
-
-.contents-container {
-  display: flex;
-  align-items: center;
 }
 
 
@@ -84,3 +71,52 @@ section {
   width: 100px;
   margin: 16px;
 }
+
+/* 600px以上の画面用のCSS */
+@media (min-width: 600px) {
+  
+  .header-inner {
+    max-width: 1200px;
+    display: flex;
+    /* background: silver; */
+    justify-content: space-between;
+    align-items: center;
+  }  
+  
+  .header-nav ul {
+    display: flex;
+  }  
+  
+  .header-nav li:not(:last-child) {
+    margin-right :40px;
+  }  
+  
+  .header-nav a {
+    font-size:20px;
+  }  
+  
+  /* PC版では表示しない。 */
+  .logo {
+    display: initial;
+  }
+  
+  /* PCで表示する */
+  .logoforSP {
+    display: none;
+  }
+
+  .contents-container {
+    /* 画像と文章を横並びにする */
+    display: flex;
+    align-items: center;
+  }
+}  
+
+/* これより下は、未選別 */
+
+
+/* ↓これいらない？ */
+/* .TopImg {
+  margin-bottom: 150px;
+} */  
+
