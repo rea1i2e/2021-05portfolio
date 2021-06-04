@@ -83,8 +83,12 @@ h1 a {
 
 
 section {
+  max-width: 1200px;
   /* 要素がヘッダーの後ろに隠れないように */
   padding-top: 110px;
+  padding-left: 10px;
+  /* background: silver; */
+  margin: 0 auto;
 }
 
 h2 {
