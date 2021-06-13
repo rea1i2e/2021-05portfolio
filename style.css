@@ -1,21 +1,15 @@
 /* 共通のCSS */
 
 body {
-  padding-top :100px;
   margin: 0;
 }
 
-header {
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background: white;
-}
-
 .header-inner {
-  /* background: skyblue; */
+  width: 100%;
   max-width: 1200px;
+  /* ヘッダーを画面上部に固定 */
+  background: white;
+  /* background:blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,15 +42,24 @@ h1 a {
 .header-nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   /* background: pink; */
-  margin: 10px;
+  margin: 0;
+  /* liの左側パッディングを削除 */
   padding-inline-start: 0;
 }
 
 .header-nav li {
+  width: 30%;
   margin :5px;
+  border: 2px gray solid;
+  border-radius: 2px;
+  text-align:center;
   /* background: silver; */
 }  
+
+
+
 
 .header-nav a {
   text-decoration: none;
@@ -90,7 +93,6 @@ section {
   /* background: silver; */
   margin: 0 auto;
 }
-
 h2 {
   font-size: 32px;
   padding-left: 12px;
@@ -115,12 +117,31 @@ h2 {
   margin: 16px;
 }
 
+.back-to-top {
+  position:fixed;
+  bottom: 10px;
+  right: 10px;
+  background: green;
+  border-radius: 5px;
+  color: white;
+  text-align:center;
+  padding: 5px 20px;
+}
+
+.back-to-top:hover {
+  opacity: .7;
+}
+
 /* 600px以上の画面用のCSS */
 @media (min-width: 600px) {
   
   .header-inner {
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }  
   
   /* PC版では表示しない。 */
@@ -145,27 +166,38 @@ h2 {
     align-items: center;
   }
   
+  .header-nav ul {
+    justify-content: flex-end;
+  }
+
+  /* navをボーダーなし１行で表示 */
+  .header-nav li {
+    width: auto;
+    margin :5px;
+    border: none;
+    /* text-align:left; */
+  } 
+  
   .header-nav a {
     font-size:20px;
   }
   
   /* PC版で表示する */
   .TopImg {
-    margin: 20px auto;
+    margin: 0px auto;
     display: block;
+    /* コンテンツがヘッダーの下に隠れないように */
+    padding-top :100px;
+  }  
+  
+  section {
+    /* 要素がヘッダーの後ろに隠れないように */
+    padding-top: 110px;
   }
   
   /* PC版では表示しない。 */
   .TopImgforSP {
     display: none;
-  }
-}  
-
-/* これより下は、未選別 */
-
-
-/* ↓これいらない？ */
-/* .TopImg {
-  margin-bottom: 150px;
-} */  
+  }  
+}    
 
