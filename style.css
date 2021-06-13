@@ -1,7 +1,8 @@
 /* 共通のCSS */
 
-body {
+html, body {
   margin: 0;
+  width:100%
 }
 
 .header-inner {
@@ -35,10 +36,6 @@ h1 a {
   display: initial;
 }
 
-/* .header-nav {
-  background: orange;
-} */
-
 .header-nav ul {
   list-style: none;
   display: flex;
@@ -47,19 +44,17 @@ h1 a {
   margin: 0;
   /* liの左側パッディングを削除 */
   padding-inline-start: 0;
+  justify-content: center;
 }
 
 .header-nav li {
   width: 30%;
-  margin :5px;
+  margin :1%;
   border: 2px gray solid;
   border-radius: 2px;
   text-align:center;
   /* background: silver; */
 }  
-
-
-
 
 .header-nav a {
   text-decoration: none;
@@ -82,14 +77,15 @@ h1 a {
 .TopImgforSP {
   margin: 0 auto;
   display: block;
+  width: 100%
 }
 
 
 section {
   max-width: 1200px;
   /* 要素がヘッダーの後ろに隠れないように */
-  padding-top: 110px;
-  padding-left: 10px;
+  /* padding-top: 110px; */
+  padding: 4%;
   /* background: silver; */
   margin: 0 auto;
 }
