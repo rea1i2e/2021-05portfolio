@@ -10,10 +10,10 @@ html, body {
   max-width: 1200px;
   /* ヘッダーを画面上部に固定 */
   background: white;
-  /* background:blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background:blue; */
 }  
 
 h1 {
@@ -68,23 +68,21 @@ h1 a {
   color: green;
 }  
 
-/* スマホ版では表示しない。 */
-.TopImg {
-  display: none;
-}
+/* メインビジュアル */
 
-/* スマホ版で表示する */
-.TopImgforSP {
-  margin: 0 auto;
+.main-visual {
   display: block;
-  width: 100%
-}
+  /* メインビジュアルがヘッダーの下に隠れないように */
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+  object-fit: cover;
+  margin-bottom: 200px;
+}  
 
 
 section {
   max-width: 1200px;
-  /* 要素がヘッダーの後ろに隠れないように */
-  /* padding-top: 110px; */
   padding: 4%;
   /* background: silver; */
   margin: 0 auto;
@@ -178,11 +176,9 @@ h2 {
     font-size:20px;
   }
   
-  /* PC版で表示する */
-  .TopImg {
-    margin: 0px auto;
-    display: block;
-    /* コンテンツがヘッダーの下に隠れないように */
+
+  .main-visual {
+    /* メインビジュアルがヘッダーの下に隠れないように */
     padding-top :100px;
   }  
   
