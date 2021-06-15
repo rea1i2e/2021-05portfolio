@@ -80,13 +80,19 @@ h1 a {
   margin-bottom: 200px;
 }  
 
+/* メインコンテンツ */
 
-section {
+.wrapper {
   max-width: 1200px;
   padding: 4%;
-  /* background: silver; */
   margin: 0 auto;
+  /* background: silver; */
 }
+
+/* .wrapper2 {
+  background:yellow;
+} */
+
 h2 {
   font-size: 32px;
   padding-left: 12px;
@@ -182,7 +188,7 @@ h2 {
     padding-top :100px;
   }  
   
-  section {
+  .wrapper {
     /* 要素がヘッダーの後ろに隠れないように */
     padding-top: 110px;
   }
